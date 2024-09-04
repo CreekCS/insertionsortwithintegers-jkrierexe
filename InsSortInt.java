@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.util.ArrayList;
 import java.io.FileNotFoundException;
+import java.util.*;
 
 public class InsSortInt {
     public static void main(String[] args) throws FileNotFoundException{
@@ -21,7 +22,7 @@ public class InsSortInt {
         
     }
     public static Integer[] InsertionSort(Integer[] nums){
-        for(int i=1; i<nums.length-1; i++){
+        for(int i=1; i<nums.length; i++){
             int key=nums[i];
             int j=i-1;
             while(j>=0 && nums[j]>key){
